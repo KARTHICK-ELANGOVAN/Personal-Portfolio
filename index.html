@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karthick">
+    <meta name="description" content="Portfolio website of karthick - Full Stack Developer | Web Developer">
+    <link rel="shortcut icon" href="assets/angular-icon-logo.png" type="image/x-icon">
+    <title>Portfolio - Karthick E</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css"/>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    <div class="main-container">
+        <!-- Navigation Section -->
+        <div class="socialicons">
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/karthick-elangovan-51a776255"><i class="fa fa-linkedin"></i></a>
+                <!--<a href=""><i class="fa fa-twitter"></i></a>-->
+                <a href="https://www.instagram.com/__karthic_k_?utm_source=qr&igsh=MTg1MjMwbGIwZWZsNA=="><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/KARTHICK-ELANGOVAN" target="_blank"><i class="fa fa-github"></i></a> <!-- GitHub replaced YouTube -->
+            </div>
+        </div>
+        <div class="nav">
+            <div class="navbar">
+                <span class="menu-icon" onclick="toggleMenu()">☰</span>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Project</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://drive.google.com/file/d/1r48HqXbSX9MyKZmXodtL0z2GmhvJF0YS/view?usp=drivesdk" target="_blank" download>
+                        <button>Get Resume</button>
+                    </a>
+                    <span class="close-icon" onclick="toggleMenu()">✖</span>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.querySelector(".nav-links");
+                navLinks.style.display = (navLinks.style.display === "flex") ? "none" : "flex";
+            }
+        </script>
+
+        <!-- Home Section -->
+        <div class="home" id="home">
+            <div class="image">
+                <a href="https://www.linkedin.com/in/karthick-elangovan-51a776255" target="_blank">
+                    <img src="assets/karthick-fullview-photo.png" alt="Profile Picture">
+                </a>
+            </div>
+            <div class="name">
+                <h1>KARTHICK E</h1>
+                
+                <h3>I'm a <span class="auto-type"></span></h3>
+                
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about" id="about">
+            <div class="content">
+                <ul>
+                    <li>Bachelor of Engineering in Textile Technology from Anna University, Chennai, with a strong foundation in programming, web development, and software project implementation.</li>
+
+                    <li>Completed a Python Full Stack Development course at Pyspider Basavanagudi, gaining expertise in Python, Django, MySQL, JavaScript, HTML, and CSS.</li>
+                        
+                    <li>Proficient in both front-end and back-end technologies, with hands-on experience in building dynamic, scalable web applications and crafting user-friendly interfaces.</li>
+                        
+                    <li>Developed a fully functional Blog Website and a feature-rich E-commerce Website using Django and MySQL, including authentication systems, admin panels, email notifications, and third-party payment integration.</li>
+                        
+                    <li>Passionate about front-end development, UI/UX design, and integrating machine learning features into web applications for smarter user experiences.</li>
+                        
+                    <li>Strong leadership, communication, and organizational skills:                   
+                        <ul>
+                            <li>Served as the Department Representative at Anna University.</li>
+                            <li>Facilitated communication for 250+ students and organized 10+ meetings to address academic concerns.</li>                       
+                            <li>Led 5+ events/workshops to boost student engagement and contribute to curriculum improvements.</li>
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills" id="skills">
+            <h1>Skills</h1>
+            <div class="card-deck">
+                <!-- First Row of Skills -->
+                <div class="col-sm card">
+                    <div class="card-body">
+                        <div class="image">
+                            <h5 class="card-title">Python</h5>
+                            <img class="card-img-top" src="assets/pythonlogo.png" alt="Python Logo">
+                        </div>
+                        <p class="card-text">Python Core, Functions (Built-in methods: list, tuple, set, dictionary), User-defined functions, OOP Concepts.</p>
+                    </div>
+                </div>
+                <div class="col-sm card">
+                    <div class="card-body">
+                        <div class="image">
+                            <h5 class="card-title">Web Technology</h5>
+                            <img class="card-img-top" src="assets/htmlcssjs-removebg-preview.png" alt="Web Tech Logo">
+                        </div>
+                        <p class="card-text">Strong knowledge of HTML5, CSS, JS and worked on many projects such as portfolio, blog website, E-Commerce website.</p>
+                    </div>
+                </div>
+                <div class="col-sm card">
+                    <div class="card-body">
+                        <div class="image">
+                            <h5 class="card-title">GitHub</h5>
+                            <img class="card-img-top" src="assets/github.png" alt="GitHub Logo">
+                        </div>
+                        <p class="card-text">Good knowledge of Git commands for repository management, handling version control systems, GitHub cloud, creating repositories, managing repositories, and hosting projects on live websites.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-deck mt-5">
+                <!-- Second Row of Skills -->
+                <div class="col-sm card">
+                    <div class="card-body">
+                        <div class="image">
+                            <h5 class="card-title">Django Framework</h5>
+                            <img class="card-img-top" src="assets/image.png" alt="WordPress Logo">
+                        </div>
+                        <p class="card-text">Experienced with Django framework, including ORM, REST APIs, authentication, and template rendering, for scalable and dynamic web applications.</p>
+                    </div>
+                </div>
+                <div class="col-sm card">
+                    <div class="card-body">
+                        <div class="image">
+                            <h5 class="card-title">SQL</h5>
+                            <img class="card-img-top" src="assets/sql.png" alt="SQL Logo">
+                        </div>
+                        <p class="card-text">MySQL: Strong knowledge of relational databases, CRUD operations, complex queries, and integrating MySQL with Django for efficient data management.</p>
+                    </div>
+                </div>
+                <div class="col-sm card">
+                    <div class="card-body">
+                        <div class="image">
+                            <h5 class="card-title">Libraries</h5>
+                            <img class="card-img-top" src="assets/libraries2.png" alt="python libraries Logo">
+                        </div>
+                        <p class="card-text">Pandas & NumPy: Experienced in data manipulation, analysis, and numerical computing using Pandas and NumPy for efficient handling of datasets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <div class="card-deck">
+                <div class="row gap-5">                             
+                    <!-- First Row of Projects -->
+                    <div class="col-sm card">
+                        <div class="card-body">
+                            <div class="slider" id="slider1">
+                                <div class="slides-container" id="slide-track-1">
+                                  <!-- Slide Images -->
+                                  <div class="slide"><img src="assets/blog-image(1).png" alt="Slide 1"></div>
+                                  <div class="slide"><img src="assets/blog-image(4).png" alt="Slide 2"></div>
+                                  <div class="slide"><img src="assets/blog-image(9).png" alt="Slide 3"></div>
+                                  <div class="slide"><img src="assets/blog-image(3).png" alt="Slide 4"></div>
+                                  <div class="slide"><img src="assets/blog-image(5).png" alt="Slide 5"></div>
+                                </div>
+                              
+                                <!-- Manual Buttons -->
+                                <div class="navigation-manual">
+                                  <span class="manual-btn" onclick="manualSlide(1, 0)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(1, 1)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(1, 2)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(1, 3)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(1, 4)"></span>
+                                </div>
+                            </div>
+                            <h5 class="card-title mt-5">Blog Website</h5>
+                            <a href="https://github.com/KARTHICK-ELANGOVAN/Blog_project" target="_blank">
+                                <button type="button" class="btn btn-primary">View code</button>
+                            </a>
+                            <a href="http://karthickelangovan.pythonanywhere.com" target="_blank">
+                                <button type="button" class="btn btn-primary">View website</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm card">
+                        <div class="card-body">
+                            <div class="slider" id="slider2">
+                                <div class="slides-container" id="slide-track-2">
+                                  <!-- Slide Images -->
+                                  <div class="slide"><img src="assets/E-commerce(1).png" alt="Slide 1"></div>
+                                  <div class="slide"><img src="assets/E-commerce(8).png" alt="Slide 2"></div>
+                                  <div class="slide"><img src="assets/E-commerce(3).png" alt="Slide 3"></div>
+                                  <div class="slide"><img src="assets/E-commerce(4).png" alt="Slide 4"></div>
+                                  <div class="slide"><img src="assets/E-commerce(2).png" alt="Slide 5"></div>
+                                </div>
+                              
+                                <!-- Manual Buttons -->
+                                <div class="navigation-manual">
+                                  <span class="manual-btn" onclick="manualSlide(2, 0)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(2, 1)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(2, 2)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(2, 3)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(2, 4)"></span>
+                                </div>
+                            </div>
+                            <h5 class="card-title mt-5">Shopping - E-commerce Website </h5>
+                            <a href="https://github.com/KARTHICK-ELANGOVAN/eccommerce_shopcart" target="_blank">
+                                <button type="button" class="btn btn-primary">View code</button>
+                            </a>
+                            <a href="#" target="_blank">
+                                <button type="button" class="btn btn-primary">View website</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+              <!-- <div class="row gap-5 mt-5">-->
+                    <!-- Second Row of Projects -->
+                   <!--<div class="col-sm card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/portfolio.png" alt="Portfolio Project">
+                            <h5 class="card-title mt-5">Personal Portfolio</h5>
+                            <a href="#" target="_blank">
+                                <button type="button" class="btn btn-primary">View code</button>
+                            </a>
+                            <a href="#" target="_blank">
+                                <button type="button" class="btn btn-primary">View website</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="" alt="">
+                            <h5 class="card-title mt-5"></h5>
+                            <a href="" target="_blank">
+                                <button type="button" class="btn btn-primary">View code</button>
+                            </a>
+                            <a href="" target="_blank">
+                                <button type="button" class="btn btn-primary">View website</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact" id="contact">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 p-5">
+                    <h1 class="text-center mb-4">Get in Touch</h1>
+                    <p class="text-center">
+                        "Have any queries or collaboration ideas? Feel free to reach out! Whether it's about full-stack development, front-end technologies, Python, Django, or web development, I'm always open to discussions and new opportunities."
+                    </p>
+                    
+                    <!-- Contact Form -->
+                    <form action="#" id="contact-form">
+                        <div class="form-floating mb-3">
+                            <input type="email"  name="email" class="form-control" id="floatingInput" required placeholder="name@example.com">
+                            <label for="floatingInput">Email Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" name="phone" required id="floatingmobno" placeholder="Mobile Number">
+                            <label for="floatingmobno">Mobile Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control"  name="message" placeholder="Leave a message here" id="floatingTextarea2" style="height: 120px"></textarea>
+                            <label for="floatingTextarea2">Your Message</label>
+                        </div>
+                            <button type="submit" class="btn-submit">Submit</button>
+                        <div class="loader">
+                            <i class="lni lni-spinner-3"></i>
+                        </div>
+                        <div class="form-message">
+
+                        </div>
+                    </form>
+
+                    <div class="c-icons d-flex justify-content-center">
+                        <a href="https://wa.me/+918190948208" class="text-dark"><i class="fa fa-whatsapp p-4 text-center"></i></a>
+                        <a href="mailto:karthielangovan2003@gmail.com" class="text-dark"><i class="fa fa-envelope p-4"></i></a>
+                        <a href="tel:8190948208" class="text-dark"><i class="fa fa-phone p-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© Developed by <strong>Karthick</strong></p>
+            
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        window.addEventListener('load', function () {
+            const loadingOverlay = document.querySelector('.loading-overlay');
+            setTimeout(() => {
+                loadingOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                }, 500);
+            }, 1500);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', function () {
+            const parallax = document.querySelector('.home');
+            let scrollPosition = window.pageYOffset;
+            parallax.style.transform = 'translateY(' + (scrollPosition * 0.5) + 'px)';
+        });
+
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        }, false);
+
+            const sliders = [
+              { id: 1, count: 5 },{ id: 2, count: 5 }
+              
+            ];
+            
+        sliders.forEach(slider => {
+            let current = 0;
+            const track = document.getElementById(`slide-track-${slider.id}`);
+            const interval = setInterval(() => {
+            current = (current + 1) % slider.count;
+            track.style.transform = `translateX(-${current * 100}%)`;
+            }, 3000);
+        });
+        
+        // Manual Slide Function
+        function manualSlide(sliderId, index) {
+            const track = document.getElementById(`slide-track-${sliderId}`);
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+           
+            
+       
+          
+          
+        
+    </script>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ <script src="contact.js"></script>
+ <script>
+    var typed = new Typed(".home .auto-type", {
+        strings : ["Developer","Techie","Designer"],
+        typeSpeed : 150,
+        backSpeed : 150,
+        loop: true
+    })
+</script>
+</body>
+</html>
