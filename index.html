@@ -38,7 +38,7 @@
                     <a href="#skills">Skills</a>
                     <a href="#projects">Project</a>
                     <a href="#contact">Contact</a>
-                    <a href="https://drive.google.com/file/d/1r48HqXbSX9MyKZmXodtL0z2GmhvJF0YS/view?usp=drivesdk" target="_blank" download>
+                    <a href="https://drive.google.com/file/d/1jMD3Fu6kigzvE5LyHqumCPDpRNctcZ06/view?usp=drivesdk" target="_blank" download>
                         <button>Get Resume</button>
                     </a>
                     <span class="close-icon" onclick="toggleMenu()">✖</span>
@@ -71,13 +71,13 @@
         <div class="about" id="about">
             <div class="content">
                 <ul>
-                    <li>Bachelor of Engineering in Textile Technology from Anna University, Chennai, with a strong foundation in programming, web development, and software project implementation.</li>
+                    <li>Bachelor of Engineering in Textile Technology from Anna University, Chennai, with a strong foundation in programming,software development and data analysis.</li>
 
-                    <li>Completed a Python Full Stack Development course through an online platform, gaining expertise in Python, Django, MySQL,HTML, and CSS.</li>
+                    <li>Completed a Python course through an online platform, gaining expertise in Python, Django, MySQL,Power BI, HTML, and CSS.</li>
                         
-                    <li>Proficient in both front-end and back-end technologies, with hands-on experience in building dynamic, scalable web applications and crafting user-friendly interfaces.</li>
+                    <li>Proficient in back-end technologies and skilled in data analysis tools like Power BI, along with Python libraries such as Pandas, NumPy, and Matplotlib for data manipulation and visualization.</li>
                         
-                    <li>Developed a fully functional Blog Website and a feature-rich E-commerce Website using Django and MySQL, including authentication systems, admin panels, email notifications, and third-party payment integration.</li>
+                    <li>Developed a fully functional Blog Website and a feature-rich E-commerce Website using Django and MySQL, including authentication systems, admin panels, email notifications, and third-party payment integration. Additionally, built a Spotify Analysis Dashboard using Power BI to visualize music streaming insights and KPIs, and carried out a Walmart Sales Analytics Project using SQL and Python to extract actionable business insights from large-scale retail data.</li>
                         
                     <li>Passionate about front-end development, UI/UX design, and integrating machine learning features into web applications for smarter user experiences.</li>
                         
@@ -225,7 +225,62 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="row gap-5">                             
+                    <!-- Second Row of Projects -->
+                    <div class="col-sm card">
+                        <div class="card-body">
+                            <div class="slider" id="slider3">
+                                <div class="slides-container" id="slide-track-3">
+                                  <!-- Slide Images -->
+                                  <div class="slide"><img src="assets/Dashboard-image(1).png" alt="Slide 1"></div>
+                                  <div class="slide"><img src="assets/Dashboard-image(2).png" alt="Slide 2"></div>
+                                  <div class="slide"><img src="assets/Dashboard-image(3).png" alt="Slide 3"></div>
+                                </div>
+                              
+                                <!-- Manual Buttons -->
+                                <div class="navigation-manual">
+                                  <span class="manual-btn" onclick="manualSlide(3, 0)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(3, 1)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(3, 2)"></span>
+                                  
+                                </div>
+                            </div>
+                            <h5 class="card-title mt-5">Spotify Analysis Dashbord - PowerBI</h5>
+                            <a href="https://github.com/KARTHICK-ELANGOVAN/DashBoards" target="_blank">
+                                <button type="button" class="btn btn-primary">View code</button>
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <div class="col-sm card">
+                        <div class="card-body">
+                            <div class="slider" id="slider4">
+                                <div class="slides-container" id="slide-track-4">
+                                  <!-- Slide Images -->
+                                  <div class="slide"><img src="assets/walmart-image(1).png" alt="Slide 1"></div>
+                                  <div class="slide"><img src="assets/walmart-image(2).png" alt="Slide 2"></div>
+                                  <div class="slide"><img src="assets/walmart-image(3).png" alt="Slide 3"></div>
+                                  <div class="slide"><img src="assets/walmart-image(4).png" alt="Slide 4"></div>
+                                
+                                </div>
+                              
+                                <!-- Manual Buttons -->
+                                <div class="navigation-manual">
+                                  <span class="manual-btn" onclick="manualSlide(4, 0)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(4, 1)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(4, 2)"></span>
+                                  <span class="manual-btn" onclick="manualSlide(4, 3)"></span>
+                                
+                                </div>
+                            </div>
+                            <h5 class="card-title mt-5">Walmart Data Analysis: SQL + Python Project</h5>
+                            <a href="https://github.com/KARTHICK-ELANGOVAN/Walmart_Python_SQL" target="_blank">
+                                <button type="button" class="btn btn-primary">View code</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
               <!-- <div class="row gap-5 mt-5">-->
                     <!-- Second Row of Projects -->
                    <!--<div class="col-sm card">
@@ -336,7 +391,7 @@
         }, false);
 
             const sliders = [
-              { id: 1, count: 5 },{ id: 2, count: 5 }
+              { id: 1, count: 5 },{ id: 2, count: 5 },{ id:3, count: 3},{id:4, count:4}
               
             ];
             
@@ -346,7 +401,7 @@
             const interval = setInterval(() => {
             current = (current + 1) % slider.count;
             track.style.transform = `translateX(-${current * 100}%)`;
-            }, 3000);
+            }, 5000);
         });
         
         // Manual Slide Function
@@ -366,7 +421,7 @@
  <script src="contact.js"></script>
  <script>
     var typed = new Typed(".home .auto-type", {
-        strings : ["Developer","Techie","Designer"],
+        strings : ["Developer","Techie","Analyst"],
         typeSpeed : 150,
         backSpeed : 150,
         loop: true

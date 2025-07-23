@@ -481,7 +481,7 @@
         }
 
         .projects .card-img-top {
-            height: 250px;
+            height: 350px;
             object-fit: cover;
         }
 
@@ -490,7 +490,7 @@
         }
         .slider {
             width: 100%;
-            height: 250px;
+            height: 325px;
             overflow: hidden;
             position: relative;
             border-radius: 10px;
